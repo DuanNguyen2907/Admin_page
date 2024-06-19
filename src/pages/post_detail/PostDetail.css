@@ -1,0 +1,80 @@
+.post-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.post-manager {
+  margin-left: 210px;
+}
+
+.post-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.post-meta {
+  flex-grow: 1;
+}
+
+.post-actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-actions button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.post-actions button:last-child {
+  background-color: #dc3545;
+}
+
+.post-actions button:hover {
+  opacity: 0.9;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination__link {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid #007bff;
+  color: #007bff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pagination__link--active {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination__link--disabled {
+  opacity: 0.5;
+  cursor: default;
+}
